@@ -1,0 +1,19 @@
+{
+  "name": "mernroad",
+  "version": "1.0.0",
+  "description": "Web app utilizing Google Maps API and custom algorithms to analyze and locate winding roads for driving enthusiasts to enjoy. Built using MERN Stack. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Hachibroku/MERNroad.git"
+  },
+  "author": "Murphey Osmundson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hachibroku/MERNroad/issues"
+  },
+  "homepage": "https://github.com/Hachibroku/MERNroad#readme"
+}
