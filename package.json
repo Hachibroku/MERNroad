@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Hachibroku/MERNroad#readme",
   "dependencies": {
     "@react-google-maps/api": "^2.19.2",
+    "dotenv": "^16.3.1",
     "react-router-dom": "^6.17.0",
     "react-spinners": "^0.13.8",
     "swagger-jsdoc": "^6.2.8",
