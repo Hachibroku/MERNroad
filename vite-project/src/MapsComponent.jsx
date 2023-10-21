@@ -2,6 +2,8 @@ import React from 'react';
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 import { BeatLoader } from 'react-spinners';
 
+
+
 const containerStyle = {
     width: '400px',
     height: '400px'
@@ -12,10 +14,14 @@ const center = {
     lng: -38.523
 };
 
+const apiKey = import.meta.env.VITE_REACT_APP_GOOGLE_MAPS_API_KEY;
+
 function MapsComponent() {
+    console.log("API Key:", apiKey);
+
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
-        googleMapsApiKey: ""
+        googleMapsApiKey: apiKey
     })
 
     const [map, setMap] = React.useState(null)
@@ -27,7 +33,7 @@ function MapsComponent() {
         setMap(map)
     }, [])
 
-    const onUnmount = React.useCallback(function callback(mmap) {
+    const onUnmount = React.useCallback(function callback(map) {
         setMap(null)
     }, [])
 
