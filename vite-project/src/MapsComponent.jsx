@@ -5,13 +5,13 @@ import { BeatLoader } from 'react-spinners';
 
 
 const containerStyle = {
-    width: '400px',
-    height: '400px'
+    width: '800px',
+    height: '800px'
 };
 
 const center = {
-    lat: -3.745,
-    lng: -38.523
+    lat: 35.46664,
+    lng: -83.92001
 };
 
 const apiKey = import.meta.env.VITE_REACT_APP_GOOGLE_MAPS_API_KEY;
