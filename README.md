@@ -10,7 +10,7 @@ The **Google Maps Route Scorer** is a tool designed to evaluate the "fun factor"
 - **Interactive Map Visualization**: Displays the route on an interactive Google Map.
 - **Dynamic Input for Points**: Allows the user to input specific points to analyze.
 
-[![Design][MERNroad_design.png]]
+![MERN Road Design](./MERNroad_design.png)
 
 ### Technologies Used
 - **Frontend**:
