@@ -1,6 +1,7 @@
 import React from 'react';
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 import { BeatLoader } from 'react-spinners';
+import mapStyles from './mapStyles';
 
 
 
@@ -17,7 +18,6 @@ const center = {
 const apiKey = import.meta.env.VITE_REACT_APP_GOOGLE_MAPS_API_KEY;
 
 function MapsComponent() {
-    console.log("API Key:", apiKey);
 
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
@@ -46,6 +46,7 @@ function MapsComponent() {
                 zoom={10}
                 onLoad={onLoad}
                 onUnmount={onUnmount}
+                options={{ styles: mapStyles }}
                 >
                 </GoogleMap>
             ) : (
