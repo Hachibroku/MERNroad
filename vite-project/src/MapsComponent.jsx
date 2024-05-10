@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 import { BeatLoader } from 'react-spinners';
 import mapStyles from './mapStyles';
-// import { computeAngle, computeCurvature, computeDistance } from '../../algorithms/routeScorer';
+import routeScorer from '../../algorithms/routeScorer';
 
 
 
