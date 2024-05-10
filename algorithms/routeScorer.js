@@ -1,4 +1,4 @@
-function computeAngle(p1, p2, p3) {
+export function computeAngle(p1, p2, p3) {
     const v1 = { lng: p1.lng - p2.lng, lat: p1.lat - p2.lat };
     const v2 = { lng: p3.lng - p2.lng, lat: p3.lat - p2.lat };
 
@@ -11,7 +11,7 @@ function computeAngle(p1, p2, p3) {
 }
 
 
-function computeDistance(p1, p2, p3) {
+export function computeDistance(p1, p2, p3) {
     const dx1 = p2.lng - p1.lng;
     const dy1 = p2.lat - p1.lat;
     const distance1 = Math.sqrt(dx1 * dx1 + dy1 * dy1);
@@ -23,14 +23,14 @@ function computeDistance(p1, p2, p3) {
     return distance1 + distance2;
 }
 
-function computeCurvature(polylinePoints) {
+export function computeCurvature(polylinePoints) {
     const curvatures = [];
     for (let i = 0; i < polylinePoints.length - 2; i++) {
         const p1 = polylinePoints[i];
         const p2 = polylinePoints[i + 1];
         const p3 = polylinePoints[i + 2];
 
-        const angle = computeInteriorAngle(p1, p2, p3);
+        const angle = computeAngle(p1, p2, p3);
         const ds = computeDistance(p1, p3);
 
         const curvature = angle / ds;
