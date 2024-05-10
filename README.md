@@ -24,9 +24,3 @@ The **Google Maps Route Scorer** is a tool designed to evaluate the "fun factor"
 
 - **Algorithm**:
   - Custom curvature scoring algorithms implemented using JavaScript classes.
-
-### Built With
-
-[![React][React.js]][React-url] &nbsp;
-
-[![Javascript][Javascript.com]][Javascript-url] &nbsp;
